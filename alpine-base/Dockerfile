@@ -7,20 +7,19 @@ ENV CONDA_DIR=/opt/conda CONDA_VER=4.3.11
 ENV PATH=$CONDA_DIR/bin:$PATH SHELL=/bin/bash LANG=C.UTF-8
 
 # Install useful packages 
-RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories &&\
-    apk --update add \
+RUN apk --update add \
     bash \
     curl \
     git \
     ca-certificates \
-    tini@testing \
+    tini \
     libice \
     libsm \
-    libstdc++ \
-    freeglut &&\
+    libstdc++ &&\
     rm -rf /var/cache/apk/*
 
-RUN curl https://repo.continuum.io/miniconda/Miniconda3-${CONDA_VER}-Linux-x86_64.sh  -o mconda.sh 
-
-RUN /bin/bash mconda.sh -f -b -p $CONDA_DIR && \
-    rm mconda.sh
+# get and install miniconda
+RUN curl https://repo.continuum.io/miniconda/Miniconda3-${CONDA_VER}-Linux-x86_64.sh  -o mconda.sh && \
+    /bin/bash mconda.sh -f -b -p $CONDA_DIR && \
+    rm mconda.sh && \
+    rm -rf $CONDA_DIR/pkgs/*
