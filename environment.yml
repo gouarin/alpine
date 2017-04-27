@@ -1,6 +1,6 @@
 name: precis
 channels:
-  - nodefaults
+  - defaults
   - conda-forge
 dependencies:
   - python=2.7
