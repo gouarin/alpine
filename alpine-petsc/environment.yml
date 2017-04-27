@@ -1,0 +1,6 @@
+name: precis
+channels:
+  - conda-forge
+dependencies:
+  - petsc
+  - cmake
