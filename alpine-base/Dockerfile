@@ -23,4 +23,4 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
 RUN curl https://repo.continuum.io/miniconda/Miniconda3-${CONDA_VER}-Linux-x86_64.sh  -o mconda.sh 
 
 RUN /bin/bash mconda.sh -f -b -p $CONDA_DIR && \
-    rm mconda.sh 
+    rm mconda.sh
