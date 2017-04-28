@@ -2,5 +2,6 @@ name: precis
 channels:
   - conda-forge
 dependencies:
+  - openmpi
   - petsc
   - cmake
