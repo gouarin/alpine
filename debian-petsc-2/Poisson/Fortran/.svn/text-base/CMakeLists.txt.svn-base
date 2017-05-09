@@ -1,0 +1,4 @@
+file(GLOB SRCF . *.F)
+
+ADD_EXECUTABLE(PoissonFortran ${SRCF})
+TARGET_LINK_LIBRARIES(PoissonFortran ${PETSC_LIBRARIES})

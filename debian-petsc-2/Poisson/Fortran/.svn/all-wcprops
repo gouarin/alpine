@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran
+END
+init.F
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran/init.F
+END
+main.F
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran/main.F
+END
+domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran/domain.F
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran/CMakeLists.txt
+END
+poisson2d_FD.F
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/Fortran/poisson2d_FD.F
+END

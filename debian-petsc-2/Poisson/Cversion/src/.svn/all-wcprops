@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/C/src
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/C/src/init.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/C/src/main.c
+END
+domain.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/C/src/domain.c
+END
+poisson2d_FD.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/C/src/poisson2d_FD.c
+END

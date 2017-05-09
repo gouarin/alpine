@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/cmake
+END
+ResolveCompilerPaths.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/cmake/ResolveCompilerPaths.cmake
+END
+FindPackageMultipass.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/cmake/FindPackageMultipass.cmake
+END
+FindPETSc.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn-private/atelier_petsc/!svn/ver/50/Archives/Performance/Poisson/cmake/FindPETSc.cmake
+END
