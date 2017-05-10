@@ -49,5 +49,7 @@ WORKDIR /home/$USER
 COPY Poisson /home/$USER/Poisson
 RUN chown -R $USER:$USER /home/$USER/Poisson
 
+RUN mkdir /Work /Home
+
 USER $USER
 
