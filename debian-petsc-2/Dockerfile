@@ -7,7 +7,7 @@ ENV USER=precis
 
 # Install useful packages 
 RUN apt-get update && \
-    apt-get install -y curl bzip2 build-essential python libopenblas-dev cmake openssh-server wget && \
+    apt-get install -y curl bzip2 build-essential python libopenblas-dev cmake openssh-server wget autotconf automake libtool && \
     apt-get clean
 
 # get and install openmpi
