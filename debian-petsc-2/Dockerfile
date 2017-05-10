@@ -12,7 +12,7 @@ RUN apt-get update && \
 
 # get and install openmpi
 RUN wget https://github.com/open-mpi/ompi/archive/v2.1.0.tar.gz && \
-    tar xzf v2.1.0.tar.gz && cd ompi-2.1.0 && \
+    tar xzf v2.1.0.tar.gz && cd ompi-2.1.0 && ./autogen.pl && \
     ./configure \
             --disable-dependency-tracking \
             --enable-mpi-cxx && \
