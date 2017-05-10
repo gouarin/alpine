@@ -11,8 +11,8 @@ RUN apt-get update && \
     apt-get clean
 
 # get and install openmpi
-RUN git clone https://github.com/open-mpi/ompi && \
-    cd ompi && \
+RUN curl https://github.com/open-mpi/ompi/archive/v2.1.0.tar.gz -o ompi.tar.gz && \
+    tar xzf ompi.tar.gz && cd ompi-2.1.0 && \
     ./configure \
             --disable-dependency-tracking \
             --enable-mpi-cxx && \
