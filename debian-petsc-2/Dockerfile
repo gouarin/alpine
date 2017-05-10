@@ -7,12 +7,12 @@ ENV USER=precis
 
 # Install useful packages 
 RUN apt-get update && \
-    apt-get install -y curl bzip2 build-essential python libopenblas-dev cmake openssh-server && \
+    apt-get install -y curl bzip2 build-essential python libopenblas-dev cmake openssh-server wget && \
     apt-get clean
 
 # get and install openmpi
-RUN curl https://github.com/open-mpi/ompi/archive/v2.1.0.tar.gz -o ompi.tar.gz && \
-    tar xzf ompi.tar.gz && cd ompi-2.1.0 && \
+RUN wget https://github.com/open-mpi/ompi/archive/v2.1.0.tar.gz && \
+    tar xzf v2.1.0.tar.gz && cd ompi-2.1.0 && \
     ./configure \
             --disable-dependency-tracking \
             --enable-mpi-cxx && \
