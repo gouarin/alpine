@@ -32,7 +32,7 @@ RUN curl http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.7.6.tar
         --CXXOPTFLAGS=-O3 \
         --with-hwloc=0 \
         --with-mpi=1 \
-        --with-pthread=1 \
+        --with-pthread=0 \
         --with-ssl=0 \
         --with-suitesparse=0 \
         --with-x=0 && \
