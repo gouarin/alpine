@@ -10,15 +10,14 @@ RUN apt-get update && \
     apt-get install -y curl bzip2 build-essential python libopenblas-dev cmake openssh-server && \
     apt-get clean
 
-# get and install miniconda
-RUN curl https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.0.tar.gz -o openmpi-2.1.0.tar.gz && \
-    tar xzf openmpi-2.1.0.tar.gz && \
-    cd openmpi-2.1.0 && \
+# get and install openmpi
+RUN git clone https://github.com/open-mpi/ompi && \
+    cd ompi && \
     ./configure \
             --disable-dependency-tracking \
             --enable-mpi-cxx && \
     make install && \
-    cd / && rm -r openmpi-2.1.0.tar.gz openmpi-2.1.0
+    cd / && rm -r ompi
 
 ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
