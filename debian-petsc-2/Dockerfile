@@ -17,7 +17,7 @@ RUN wget https://github.com/open-mpi/ompi/archive/v2.1.0.tar.gz && \
             --disable-dependency-tracking \
             --enable-mpi-cxx && \
     make install && \
-    cd / && rm -r ompi
+    rm -r /ompi-2.1.0 /v2.1.0.tar.gz
 
 ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
